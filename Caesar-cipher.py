@@ -1,11 +1,11 @@
-#    Ceaser Cipher script by CyberSy
+# Ceaser Cipher script by CyberSy
 # https://en.wikipedia.org/wiki/Caesar_cipher
 
 # the string to be encrypted/decrypted:
-message = input ('Enter your message: ')
+message = input ('input a text : ')
 
 # the encryption/decryptin key 
-key = input ("Enter The Encryption Key: ")
+key = input ("Chose Encryption Key 0-26 : ")
 
 # tells the program to encrypt or decrypt 
 print (" [+] Chose a Mode: \n [1] Encrypt \n [2] Decrypt ")
@@ -25,9 +25,9 @@ for words in message:
     if words in LETTERS:
         # get the encrypted (or decrypted) number for this words
         num = LETTERS.find(words) # get the number of the words
-        if mode == 'Encrypt':
+        if mode == '1':
             num = num + int(key)
-        elif mode == 'Decrypt':
+        elif mode == '2':
             num = num - int(key) 
 
         # handle the warp-around if num i larger than the length of 
@@ -45,3 +45,4 @@ for words in message:
          translated = translated + words
 
 print("[+] Your Encrypted Message Is: " + translated)
+
