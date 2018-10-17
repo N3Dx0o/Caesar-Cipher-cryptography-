@@ -44,5 +44,9 @@ for words in message:
          # just add the words without encryption/decryption 
          translated = translated + words
 
-print("[+] Your Encrypted Message Is: " + translated)
+if mode == '1':
 
+    print("[+] Your Encrypted Message Is: " + translated)
+elif mode == '2':
+
+    print ("[+] Your Decrypted Message Is: " + translated)
