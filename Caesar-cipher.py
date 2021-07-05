@@ -1,5 +1,5 @@
 #python3
-# Ceaser Cipher script by CyberSy
+# Ceaser Cipher script by N3dx0o
 # https://en.wikipedia.org/wiki/Caesar_cipher
 print (3*"\t","=============> Ceaser Cipher  <=============")
 # the string to be encrypted/decrypted:
